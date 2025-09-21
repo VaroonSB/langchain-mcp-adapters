@@ -5,15 +5,15 @@ mcp = FastMCP("Math")
 
 
 @mcp.tool()
-def add(a: int, b: int) -> int:
+def add(a: str, b: str) -> int:
     """Add two numbers"""
-    return a + b
+    return int(a) + int(b)
 
 
 @mcp.tool()
-def multiply(a: int, b: int) -> int:
+def multiply(a: str, b: str) -> int:
     """Multiply two numbers"""
-    return a * b
+    return int(a) * int(b)
 
 
 if __name__ == "__main__":
